@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-;
 import { Sparkles, Target, Calendar, AlertTriangle } from 'lucide-react';
 import { topics } from '@/app/data/topics';
 import { questions } from '@/app/data/questions';
@@ -17,6 +16,7 @@ interface PrepPlan {
 }
 
 export default function JDPlanPage() {
+
     const [jd, setJd] = useState('');
     const [plan, setPlan] = useState<PrepPlan | null>(null);
     const [loading, setLoading] = useState(false);
