@@ -9,7 +9,7 @@ export default function ShellLayout({ children }: { children: React.ReactNode })
         <>
             <Sidebar open={open} onClose={() => setOpen(false)} />
             <Navbar onMenuClick={() => setOpen(true)} />
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 py-8">{children}</main>
+            <main className="max-w-7xl mx-auto">{children}</main>
         </>
     );
 }

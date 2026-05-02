@@ -11,43 +11,35 @@ export default function Home() {
   const [query, setQuery] = useState('');
   const [role, setRole] = useState('');
   const [exp, setExp] = useState('');
+  const [count, setState] = useState(0)
 
   return (
     <div className="space-y-20 pb-20">
-
-      {/* ── Hero ─────────────────────────────────────────────── */}
-      <section className="relative text-center pt-16 pb-4 overflow-hidden">
+      <section className="relative text-center h-dvh flex justify-center space-y-6 items-center flex-col overflow-hidden">
         {/* Subtle radial glow behind the heading */}
-        <div
+        {/* <div
           aria-hidden
           className="pointer-events-none absolute inset-0 flex items-start justify-center"
         >
           <div className="w-175 h-100 rounded-full bg-brand-500/10 dark:bg-brand-500/15 blur-3xl -translate-y-1/3" />
-        </div>
+        </div> */}
 
-        {/* Badge */}
-        <span className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full border border-brand-300 dark:border-brand-700 bg-brand-50 dark:bg-brand-950 text-brand-700 dark:text-brand-300 mb-6">
+        <span className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full border border-brand-300 dark:border-brand-700 bg-brand-50 dark:bg-brand-950 text-brand-700 dark:text-brand-300">
           <Sparkles size={12} />
           Theory-first interview prep
         </span>
 
-        {/* Heading */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-slate-900 dark:text-white">
-          Master the{' '}
-          <span className="text-brand-500 dark:text-brand-400">
-            interview theory
-          </span>
-          <br />
-          that actually gets asked.
+          Master the interview theory that actually gets asked.
         </h1>
 
-        <p className="mt-5 text-base sm:text-lg text-slate-500 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
+        <p className="text-base sm:text-lg text-slate-500 dark:text-slate-400 max-w-xl leading-relaxed">
           No coding puzzles. Just real, well-explained concepts—curated by
           topic, role, experience, and company.
         </p>
 
         {/* Search bar */}
-        <div className="mt-8 max-w-2xl mx-auto flex items-center gap-0 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
+        <div className=" max-w-2xl mx-auto flex items-center gap-0 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
           <Search className="text-slate-400 shrink-0 ml-4" size={18} />
           <input
             value={query}
@@ -64,7 +56,7 @@ export default function Home() {
         </div>
 
         {/* Filters */}
-        <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+        {/* <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
           <select
             value={role}
             onChange={(e) => setRole(e.target.value)}
@@ -85,10 +77,10 @@ export default function Home() {
             <option>mid-level</option>
             <option>senior</option>
           </select>
-        </div>
+        </div> */}
 
         {/* CTA row */}
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+        {/* <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="/practice?mode=quick"
             className="inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold bg-brand-500 hover:bg-brand-600 text-white shadow-sm transition-colors"
@@ -103,7 +95,7 @@ export default function Home() {
             <Timer size={15} />
             Take Mock Test
           </Link>
-        </div>
+        </div> */}
       </section>
 
       {/* ── Featured Topics ───────────────────────────────────── */}

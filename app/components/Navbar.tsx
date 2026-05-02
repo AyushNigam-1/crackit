@@ -8,7 +8,7 @@ interface NavbarProps {
 
 export default function Navbar({ onMenuClick }: NavbarProps) {
     return (
-        <nav className="sticky top-0 z-30 h-16 flex items-center
+        <nav className="fixed w-full top-0 z-30 h-16 flex items-center
             bg-white/80 dark:bg-slate-950/80 backdrop-blur-md
             border-b border-slate-200 dark:border-slate-800"
         >
@@ -26,7 +26,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
                     <div className="w-7 h-7 rounded-lg bg-brand-500 text-white grid place-items-center shadow-sm">
                         <Map size={14} />
                     </div>
-                    InterviewMap
+                    Crackit
                 </Link>
 
                 <div className="w-10" />
